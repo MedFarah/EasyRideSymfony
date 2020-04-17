@@ -1,0 +1,43 @@
+livraison_admin:
+    path:     /livraison-admin/view
+    defaults: { _controller: LivraisonBundle:Default:adminlist }
+
+livraison_agent:
+    path:     /livraison-agent/view
+    defaults: { _controller: LivraisonBundle:Default:agenttaches }
+
+livraison_add:
+    path:     /livraison/new
+    defaults: { _controller: LivraisonBundle:Default:add }
+
+livraison_view: 
+    path: /livraison/view/{id}
+    defaults: { _controller: LivraisonBundle:Default:view }
+    requirements: 
+       'id': '\d+'
+
+agent_add:
+    path:     /agent/new
+    defaults: { _controller: LivraisonBundle:Default:agentadd }
+
+agent_list:
+    path:     /agent/view
+    defaults: { _controller: LivraisonBundle:Default:agentlist }
+
+agent_edit:
+    path:     /agent/view/{id}/edit/
+    defaults: { _controller: LivraisonBundle:Default:agentedit }
+
+admin_edit:
+    path:     /admin/view/{id}/edit/
+    defaults: { _controller: LivraisonBundle:Default:adminedit }
+   
+agent_delete:
+    path:     /agent/delete
+    defaults: { _controller: LivraisonBundle:Default:agentdelete }
+
+agent_view: 
+    path: /agent/view/{id}
+    defaults: { _controller: LivraisonBundle:Default:agentview }
+    requirements: 
+       'id': '\d+'

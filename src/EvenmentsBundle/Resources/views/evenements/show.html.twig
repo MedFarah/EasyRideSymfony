@@ -1,0 +1,48 @@
+{% extends 'baseback.html.twig' %}
+
+{% block body %}
+    <h1>Evenement</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ evenement.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom_evenements</th>
+                <td>{{ evenement.nomevenements }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ evenement.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Dateeve</th>
+                <td>{% if evenement.dateeve %}{{ evenement.dateeve|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Lieuxeve</th>
+                <td>{{ evenement.lieuxeve }}</td>
+            </tr>
+            <tr>
+                <th>Descreptioneve</th>
+                <td>{{ evenement.descreptioneve }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('evenements_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('evenements_edit', { 'id': evenement.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

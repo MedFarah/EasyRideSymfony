@@ -1,0 +1,24 @@
+reclamation_reclamation:
+    resource: "@ReclamationBundle/Controller/ReclamationController.php"
+    type:     annotation
+
+reclamation:
+    resource: "@ReclamationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+livraison:
+    resource: "@LivraisonBundle/Resources/config/routing.yml"
+    prefix:   /
+
+evenments:
+    resource: "@EvenmentsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user: 
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

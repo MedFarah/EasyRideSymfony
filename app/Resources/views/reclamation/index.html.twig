@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Reclamations list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Typereclamation</th>
+                <th>Datereclamation</th>
+                <th>Image</th>
+                <th>Status</th>
+                <th>Email</th>
+                <th>Objet</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for reclamation in reclamations %}
+            <tr>
+                <td><a href="{{ path('reclamation_show', { 'id': reclamation.id }) }}">{{ reclamation.id }}</a></td>
+                <td>{{ reclamation.typereclamation }}</td>
+                <td>{% if reclamation.datereclamation %}{{ reclamation.datereclamation|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ reclamation.image }}</td>
+                <td>{{ reclamation.status }}</td>
+                <td>{{ reclamation.email }}</td>
+                <td>{{ reclamation.objet }}</td>
+                <td>{{ reclamation.description }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('reclamation_show', { 'id': reclamation.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('reclamation_edit', { 'id': reclamation.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('reclamation_new') }}">Create a new reclamation</a>
+        </li>
+    </ul>
+{% endblock %}

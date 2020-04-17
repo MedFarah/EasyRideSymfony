@@ -1,0 +1,54 @@
+{% extends 'baseback.html.twig' %}
+
+{% block body %}
+
+
+    {{form_start(form)}}
+    {{form_widget(form)}}
+    <input class="btn btn-success" type="submit" value="Chercher" />
+    {{form_end(form)}}
+    <div class="count">
+        <span>Il existe {{ reclamations.getTotalItemCount }} reclamations !!!</span>
+    </div>
+    <div class="table-responsive ">
+
+        <table class="table " border="2" cellpadding="10">
+
+            <tr>
+
+                <th class=" ti-"><h4>  {{ knp_pagination_sortable(reclamations, 'Date Reclamation', 'dateReclamation') }}</h4></th>
+                <th class=" ti-"><h4>   {{ knp_pagination_sortable(reclamations, 'Type Reclamation', 'typeReclamation') }}</h4></th>
+                <th class=" ti-"><h4>  {{ knp_pagination_sortable(reclamations, 'Status', 'status') }}</h4></th>
+                <th class=" ti-"><h4> {{ knp_pagination_sortable(reclamations, 'Image', 'image') }}</h4></th>
+                <th class=" ti-"><h4> </h4></th>
+
+            </tr>
+
+            {%  for rec in reclamations %}
+            <tbody>
+            <tr>
+
+
+
+                <td> {{ rec.datereclamation|date('Y-m-d')}} </td>
+                <td> {{ rec.typereclamation}} </td>
+                <td> {{ rec.status}} </td>
+                <td> <img src="{{ asset('uploads/photos/' ~ rec.image) }}" height="100px" width="250px">
+                </td>
+                <td class="btn btn-light"> <a class=" ti- " href="{{ path('reclamation_edit_user',{'id':rec.id}) }}"> Modifier</a> </td>
+
+                <td class="btn btn-light"><a href="{{ path('reclamation_delete',{'id':rec.id}) }}"> Supprimer </a></td>
+            </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="navigation">
+        {{ knp_pagination_render(reclamations) }}
+    </div>
+
+
+
+{% endblock %}

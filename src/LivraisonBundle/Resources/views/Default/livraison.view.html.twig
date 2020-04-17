@@ -1,0 +1,41 @@
+{% extends 'baseback.html.twig' %}
+{% block title_page %}Informations sur la Tache{% endblock %}
+{% block small_title %}Détails{% endblock %}
+{% block body %} 
+<!-- row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="bg-danger text-white">
+                                            <tr>
+                                                <th>#Id</th>
+                                                <th>Titre</th>
+                                                <th>Prix</th>
+                                                <th>adresse</th>
+                                                <th>telephone</th>
+                                                <th>Date Creation</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#{{ tache.id }}</td>
+                                                <td>{{ tache.titre }}</td>
+                                                <td>{{ tache.prix }} DT</td>
+                                                <td>{{ tache.adresse }}</td>
+                                                <td>{{ tache.tel }}</td>
+                                                <td>{{ tache.dateCreation|date('Y-m-d H:i:s') }}</td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+{% endblock %}

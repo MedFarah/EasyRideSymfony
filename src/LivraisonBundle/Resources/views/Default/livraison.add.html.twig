@@ -1,0 +1,16 @@
+{% extends 'baseback.html.twig' %}
+{% block title_page %}Affection d'une Livraison{% endblock %}
+{% block small_title %}Formulaire{% endblock %}
+{% block body %} 
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Create" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('livraison_admin') }}">Retour a la liste des taches</a>
+        </li>
+    </ul>
+{% endblock %}

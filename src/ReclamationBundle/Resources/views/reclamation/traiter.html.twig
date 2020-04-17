@@ -1,0 +1,9 @@
+{% extends 'baseback.html.twig' %}
+
+{% block body %}
+    {{form_start(form)}}
+    {{form_widget(form)}}
+    <input class="btn btn-success" type="submit" value="Envoyer" />
+    {{form_end(form)}}
+
+{% endblock %}

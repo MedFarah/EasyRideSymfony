@@ -1,0 +1,48 @@
+{% extends 'baseback.html.twig' %}
+
+{% block body %}
+    <h1>Evenements list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom_evenements</th>
+                <th>Nombre</th>
+                <th>Dateeve</th>
+                <th>Lieuxeve</th>
+                <th>Descreptioneve</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for evenement in evenements %}
+            <tr>
+                <td><a href="{{ path('evenements_show', { 'id': evenement.id }) }}">{{ evenement.id }}</a></td>
+                <td>{{ evenement.nomevenements }}</td>
+                <td>{{ evenement.nombre }}</td>
+                <td>{% if evenement.dateeve %}{{ evenement.dateeve|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ evenement.lieuxeve }}</td>
+                <td>{{ evenement.descreptioneve }}</td>
+                <td>
+                    <ul>
+
+                        <li>
+                            <a href="{{ path('evenements_edit', { 'id': evenement.id }) }}">edit</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('evenements_delete', { 'id': evenement.id }) }}">delete</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('evenements_new') }}">Create a new evenement</a>
+        </li>
+    </ul>
+{% endblock %}

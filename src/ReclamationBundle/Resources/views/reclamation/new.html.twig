@@ -1,0 +1,17 @@
+{% extends 'baseback.html.twig' %}
+
+{% block body %}
+{{form_start(form)}}
+            {{form_widget(form)}}
+    <script>
+        $(document).ready(function() {
+            // you may need to change this code if you are not using Bootstrap Datepicker
+            $('.js-datepicker').datepicker({
+                format: 'yyyy-mm-dd'
+            });
+        });
+    </script>
+<input class="btn btn-success" type="submit" value="Ajouter" />
+{{form_end(form)}}
+
+{% endblock %}
