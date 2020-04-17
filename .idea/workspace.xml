@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f458048f-f8eb-4c45-96f0-fac6a3b88094" name="Default Changelist" comment="" />
+    <list default="true" id="f458048f-f8eb-4c45-96f0-fac6a3b88094" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +14,9 @@
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="2280878a-c251-4387-bd20-4689e09a4684" />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -92,6 +97,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZU6aGZh1RPdFUoy7NQpcfW4tp7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -99,6 +105,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/console" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -190,6 +197,7 @@
       <workItem from="1586659366150" duration="41039000" />
       <workItem from="1586856630930" duration="947000" />
       <workItem from="1586940922513" duration="3620000" />
+      <workItem from="1587110833335" duration="800000" />
     </task>
     <servers />
   </component>
