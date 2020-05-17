@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f458048f-f8eb-4c45-96f0-fac6a3b88094" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReclamationBundle/Controller/ReclamationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReclamationBundle/Controller/ReclamationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReclamationBundle/Entity/Reclamation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReclamationBundle/Entity/Reclamation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,19 +116,20 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\untitled4\app\Resources\views\default" />
-      <recent name="C:\wamp64\www\untitled4\app\Resources\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\pi-project\src\ReclamationBundle\Entity" />
       <recent name="C:\wamp64\www\pi-project\src\Entity" />
       <recent name="C:\wamp64\www" />
       <recent name="C:\wamp64\www\untitled4\web\assets" />
       <recent name="C:\wamp64\www\untitled4\src\EvenmentsBundle\Resources\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\untitled4\app\Resources\views\default" />
+      <recent name="C:\wamp64\www\untitled4\app\Resources\views" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -197,12 +200,40 @@
       <workItem from="1586659366150" duration="41039000" />
       <workItem from="1586856630930" duration="947000" />
       <workItem from="1586940922513" duration="3620000" />
-      <workItem from="1587110833335" duration="800000" />
+      <workItem from="1587110833335" duration="879000" />
+      <workItem from="1587788708478" duration="1297000" />
+      <workItem from="1587818296298" duration="2414000" />
+      <workItem from="1587871895839" duration="4136000" />
+      <workItem from="1587926673405" duration="5159000" />
+      <workItem from="1587989001426" duration="3435000" />
+      <workItem from="1588013210086" duration="6203000" />
+      <workItem from="1588077902916" duration="1592000" />
+      <workItem from="1588102219252" duration="1096000" />
+      <workItem from="1588159405398" duration="1122000" />
+      <workItem from="1588672687956" duration="1012000" />
+      <workItem from="1588725528771" duration="1722000" />
+      <workItem from="1589060854562" duration="2559000" />
+      <workItem from="1589332419406" duration="1381000" />
+      <workItem from="1589597667431" duration="1943000" />
+      <workItem from="1589689411273" duration="1698000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="507" y="21" key="#PHP" timestamp="1585789583184">
@@ -226,6 +257,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1586790915254" />
+    <state x="547" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588673006909">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="547" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.860@0.0.1600.860" timestamp="1588673006909" />
+    <state x="425" y="25" key="CommitChangelistDialog2" timestamp="1589060993827">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="425" y="25" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1589060993827" />
     <state x="477" y="287" key="ComposerCompositePathDialog" timestamp="1585685603889">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -282,16 +321,16 @@
     </state>
     <state x="450" y="267" key="SymfonyPathDialog/0.0.1366.728@0.0.1366.728" timestamp="1584898865151" />
     <state x="527" y="315" key="SymfonyPathDialog/0.0.1600.860@0.0.1600.860" timestamp="1585685550600" />
-    <state x="444" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1587110856380">
+    <state x="444" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1589689438306">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584965204671" />
-    <state x="444" y="223" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1587110856380" />
-    <state x="472" y="160" width="788" height="800" key="run.anything.popup" timestamp="1586565596725">
+    <state x="444" y="223" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1589689438305" />
+    <state x="472" y="160" width="788" height="800" key="run.anything.popup" timestamp="1588673102550">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1584965256224" />
-    <state x="472" y="160" width="788" height="800" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1586565596725" />
+    <state x="472" y="160" width="788" height="800" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1588673102550" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

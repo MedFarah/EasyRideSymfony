@@ -34,7 +34,7 @@ class Reclamation
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dateReclamation", type="date", nullable=false)
+     * @ORM\Column(name="dateReclamation", type="date", nullable=true)
      */
     private $datereclamation;
 
