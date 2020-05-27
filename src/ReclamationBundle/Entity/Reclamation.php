@@ -35,6 +35,12 @@ class Reclamation
      * @var \DateTime
      *
      * @ORM\Column(name="dateReclamation", type="date", nullable=true)
+     * @Assert\Range(
+     *      min = "yesterday",
+     *      max = "+5 hours",
+     *      minMessage = "Vous ne pouvez pas choisir cette date {{ value }} ",
+     *      maxMessage = "Il faut que la date ne dépasse pas {{ limit }}"
+     * )
      */
     private $datereclamation;
 

@@ -4,6 +4,13 @@
 
 
     {{form_start(form)}}
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> Swal.fire('Reclamation traité')</script>
+
+    {% endfor %}
     {{form_widget(form)}}
     <input class="btn btn-success" type="submit" value="Chercher" />
     {{form_end(form)}}

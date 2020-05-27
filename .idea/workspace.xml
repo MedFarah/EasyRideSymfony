@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f458048f-f8eb-4c45-96f0-fac6a3b88094" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/baseback.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/baseback.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReclamationBundle/Controller/ReclamationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReclamationBundle/Controller/ReclamationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReclamationBundle/Entity/Reclamation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReclamationBundle/Entity/Reclamation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReclamationBundle/Resources/views/reclamation/acc.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReclamationBundle/Resources/views/reclamation/acc.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReclamationBundle/Resources/views/reclamation/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReclamationBundle/Resources/views/reclamation/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReclamationBundle/Resources/views/reclamation/traiter.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReclamationBundle/Resources/views/reclamation/traiter.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +219,13 @@
       <workItem from="1589060854562" duration="2559000" />
       <workItem from="1589332419406" duration="1381000" />
       <workItem from="1589597667431" duration="1943000" />
-      <workItem from="1589689411273" duration="1698000" />
+      <workItem from="1589689411273" duration="1704000" />
+      <workItem from="1589767504343" duration="1423000" />
+      <workItem from="1589924665558" duration="1856000" />
+      <workItem from="1590455802141" duration="3912000" />
+      <workItem from="1590487830572" duration="4567000" />
+      <workItem from="1590531599538" duration="2869000" />
+      <workItem from="1590563135876" duration="1897000" />
     </task>
     <servers />
   </component>
@@ -321,11 +331,11 @@
     </state>
     <state x="450" y="267" key="SymfonyPathDialog/0.0.1366.728@0.0.1366.728" timestamp="1584898865151" />
     <state x="527" y="315" key="SymfonyPathDialog/0.0.1600.860@0.0.1600.860" timestamp="1585685550600" />
-    <state x="444" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1589689438306">
+    <state x="444" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1590563139823">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584965204671" />
-    <state x="444" y="223" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1589689438305" />
+    <state x="444" y="223" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1590563139823" />
     <state x="472" y="160" width="788" height="800" key="run.anything.popup" timestamp="1588673102550">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -337,7 +347,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Resources/views/baseback.html.twig</url>
-          <line>382</line>
+          <line>385</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

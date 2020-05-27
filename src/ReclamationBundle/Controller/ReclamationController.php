@@ -267,7 +267,7 @@ class ReclamationController extends Controller
      */
     public function deleteCodeNameOneAction(Request $request, Reclamation $reclamation)
     {
-
+        if($request->get('s')==1){
         $reclamation = $this->getDoctrine()->getManager()->getRepository(Reclamation::class)->find($request->get('id'));
        $em = $this->getDoctrine()->getManager();
         $em->remove($reclamation);
@@ -275,7 +275,15 @@ class ReclamationController extends Controller
 
         $serial = new Serializer([new ObjectNormalizer()]);
         $fora = $serial->normalize($reclamation);
-        return new JsonResponse($fora);
+        return new JsonResponse($fora); }
+        else{
+            $reclamation = $this->getDoctrine()->getManager()->getRepository(Reclamation::class)->find($request->get('id'));
+            $reclamation->setStatus("Traiter");
+            $this->getDoctrine()->getManager()->flush();
+            $serial = new Serializer([new ObjectNormalizer()]);
+            $fora = $serial->normalize($reclamation);
+            return new JsonResponse($fora);
+        }
     }
 
 
@@ -292,7 +300,7 @@ class ReclamationController extends Controller
         $form = $this->createFormBuilder($reclamation)
             ->add('image', FileType::class, array('label' => 'Image(JPG) '))
             ->add('datereclamation',DateType::class,array('widget' => 'single_text',
-
+                'label' => 'Date Reclamation ',
                 // prevents rendering it as type="date", to avoid HTML5 date pickers
                 'html5' => true,
 
@@ -354,7 +362,7 @@ class ReclamationController extends Controller
         $f = $this->createFormBuilder($reclamation)
             ->add('datereclamation',DateType::class,array('widget' => 'single_text',
                 'disabled'=>true,
-
+                'label' => 'Date Reclamation ',
                 // prevents rendering it as type="date", to avoid HTML5 date pickers
                 'html5' => true,
 
@@ -380,9 +388,9 @@ class ReclamationController extends Controller
         $f->handleRequest($request);
 
         if ($f->isSubmitted()) {
-
+            $this->addFlash('success', 'Reclamation modifier avec succes!!');
             $this->getDoctrine()->getManager()->flush();
-            return $this->redirectToRoute('reclamation_index');
+            return $this->redirectToRoute('reclamation_index_user');
         }
 
         return $this->render('@Reclamation/reclamation/traiter.html.twig', array(
@@ -431,6 +439,7 @@ class ReclamationController extends Controller
                 ->setBody($reclamation->getDescription());
 
             $this->get('mailer')->send($message);
+            $this->addFlash('success', 'Reclamation traité avec succes!!');
             $this->getDoctrine()->getManager()->flush();
             return $this->redirectToRoute('reclamation_index');
         }
@@ -478,6 +487,7 @@ class ReclamationController extends Controller
 
         if ($form->isSubmitted() ) {
             $em = $this->getDoctrine()->getManager();
+            $this->addFlash('success', 'Reclamation supprimé avec succes!!');
             $em->remove($reclamation);
             $em->flush();
             return $this->redirectToRoute('reclamation_index');
